@@ -1,8 +1,7 @@
 #' Vehicle data
 #'
 #' Fuel economy data from the EPA, 1985-2015. This dataset contains
-#' selected varaibles, and removes vehicles with incomplete data (e.g.
-#' no drive train data)
+#' selected varaibles
 #'
 #' @format A data frame with variables:
 #' \describe{
@@ -21,12 +20,6 @@
 #' \item{cty}{City fuel economy, in mpg}
 #' }
 #'
-#' @source \url{http://www.fueleconomy.gov/feg/download.shtml}
-#' @examples
-#' if (require("dplyr")) {
-#' vehicles
-#' vehicles %>% group_by(year) %>% summarise(cty = mean(cty))
-#' }
-#'
+
 "vehicles"
 
